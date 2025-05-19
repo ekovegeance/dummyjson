@@ -6,7 +6,7 @@ import {Dialog, DialogBackdrop, DialogPanel,} from '@headlessui/react'
 import Link from 'next/link'
 import {signOut, useSession} from "next-auth/react"
 import {Button} from "@/components/ui/button";
-import NavUser from "@/components/nav-user";
+import NavUser from "@/components/navbar/nav-user";
 import {AuthUser} from "@/types/auth";
 
 
@@ -64,11 +64,10 @@ export default function Navbar() {
                         <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                             <div className="flow-root">
                                 {session ? (<NavUser user={user} signOut={signOut}/>) : (
-                                    <Link href="/login" className="-m-2 block p-2 font-medium text-gray-900">
+                                    <Link href="/signin" className="-m-2 block p-2 font-medium text-gray-900">
                                         Sign in
                                     </Link>
                                 )}
-
                             </div>
                         </div>
 
@@ -117,7 +116,7 @@ export default function Navbar() {
                                 <div className="hidden md:flex md:flex-row md:gap-4 md:items-center">
                                     {session ?
                                         (<NavUser user={user} signOut={signOut}/>) :
-                                        (<Link href="/login">
+                                        (<Link href="/signin">
                                             <Button>Sign In</Button>
                                         </Link>)}
                                 </div>

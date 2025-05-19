@@ -21,7 +21,8 @@ Use [Style Guide](https://ekovegeance.github.io/styleguide/coding/nextjs) for Co
 
 
 ### Learn More
-- [Dummy JSON](https://dummyjson.com/) - Dummy JSON API Documentation.
+- [UI Templates](https://tailwindcss.com/plus/ui-blocks/ecommerce) - Tailwind CSS UI Blocks for E-commerce.
+- [Dummy JSON](https://dummyjson.apidog.io/) - Dummy JSON API Documentation.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Auth.js](https://authjs.dev/) - Authentication for Next.js.
 - [Axios](https://axios-http.com/docs/intro) - Promise based HTTP client for the browser and Node.js.

@@ -3,6 +3,9 @@ import Credentials from "@auth/core/providers/credentials";
 import api from "@/lib/axios";
 
 export const {handlers, signIn, signOut, auth} = NextAuth({
+    pages: {
+        signIn: "/login"
+    },
     providers: [
         Credentials({
             credentials: {
