@@ -39,6 +39,9 @@ export default function Cta() {
 
                                         <div className="mt-6 shrink-0 sm:mt-0">
                                             <Image
+                                                loading="eager"
+                                                height={600}
+                                                width={500}
                                                 alt=""
                                                 src={image2}
                                                 className="size-64 rounded-lg object-cover md:size-72"
@@ -48,6 +51,9 @@ export default function Cta() {
                                     <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-y-6 sm:space-x-0 lg:space-y-8">
                                         <div className="shrink-0">
                                             <Image
+                                                loading="eager"
+                                                height={600}
+                                                width={500}
                                                 alt=""
                                                 src={image1}
                                                 className="size-64 rounded-lg object-cover md:size-72"
@@ -56,6 +62,9 @@ export default function Cta() {
 
                                         <div className="mt-6 shrink-0 sm:mt-0">
                                             <Image
+                                                loading="eager"
+                                                height={600}
+                                                width={500}
                                                 alt=""
                                                 src={image3}
                                                 className="size-64 rounded-lg object-cover md:size-72"
@@ -65,6 +74,9 @@ export default function Cta() {
                                     <div className="flex space-x-6 sm:flex-col sm:space-y-6 sm:space-x-0 lg:space-y-8">
                                         <div className="shrink-0">
                                             <Image
+                                                loading="eager"
+                                                height={600}
+                                                width={500}
                                                 alt=""
                                                 src={image2}
                                                 className="size-64 rounded-lg object-cover md:size-72"
@@ -73,6 +85,9 @@ export default function Cta() {
 
                                         <div className="mt-6 shrink-0 sm:mt-0">
                                             <Image
+                                                loading="eager"
+                                                height={600}
+                                                width={500}
                                                 alt=""
                                                 src={image1}
                                                 className="size-64 rounded-lg object-cover md:size-72"

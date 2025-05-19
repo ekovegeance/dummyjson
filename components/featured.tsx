@@ -9,6 +9,9 @@ export default function Featured() {
             <div className="relative bg-primary px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
                 <div className="absolute inset-0 overflow-hidden">
                     <Image
+                        loading="eager"
+                        height={600}
+                        width={500}
                         alt=""
                         src={image8}
                         className="size-full object-cover"

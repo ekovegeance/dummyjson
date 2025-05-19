@@ -1,4 +1,3 @@
-import React from 'react';
 import ProductList from "@/components/product/product-list";
 import { Product } from '@/types/product';
 import { getProducts } from "@/lib/data/product";

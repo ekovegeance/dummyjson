@@ -39,6 +39,9 @@ export default function Hero() {
                                                 className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image1}
                                                     className="size-full object-cover"
                                                 />
@@ -46,6 +49,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image2}
                                                     className="size-full object-cover"
                                                 />
@@ -55,6 +61,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image3}
                                                     className="size-full object-cover"
                                                 />
@@ -62,6 +71,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image4}
                                                     className="size-full object-cover"
                                                 />
@@ -69,6 +81,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image5}
                                                     className="size-full object-cover"
                                                 />
@@ -78,6 +93,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image6}
                                                     className="size-full object-cover"
                                                 />
@@ -85,6 +103,9 @@ export default function Hero() {
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <Image
                                                     alt=""
+                                                    loading="eager"
+                                                    height={600}
+                                                    width={500}
                                                     src={image7}
                                                     className="size-full object-cover"
                                                 />

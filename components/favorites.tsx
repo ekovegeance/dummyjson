@@ -50,6 +50,9 @@ export default function Favorites() {
                     {favorites.map((favorite) => (
                         <div key={favorite.id} className="group relative">
                             <Image
+                                loading="eager"
+                                height={600}
+                                width={500}
                                 alt={favorite.imageAlt}
                                 src={favorite?.imageSrc}
                                 className="h-96 w-full rounded-lg object-cover group-hover:opacity-75 sm:aspect-2/3 sm:h-auto"

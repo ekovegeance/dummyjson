@@ -21,6 +21,9 @@ export default function Category() {
                 <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
                     <div className="group relative aspect-2/1 overflow-hidden rounded-lg sm:row-span-2 sm:aspect-square">
                         <Image
+                            loading="eager"
+                            height={600}
+                            width={500}
                             alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
                             src={image1}
                             className="absolute size-full object-cover group-hover:opacity-75"
@@ -45,6 +48,9 @@ export default function Category() {
                     </div>
                     <div className="group relative aspect-2/1 overflow-hidden rounded-lg sm:aspect-auto">
                         <Image
+                            loading="eager"
+                            height={600}
+                            width={500}
                             alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
                             src={image2}
                             className="absolute size-full object-cover group-hover:opacity-75"
@@ -69,6 +75,9 @@ export default function Category() {
                     </div>
                     <div className="group relative aspect-2/1 overflow-hidden rounded-lg sm:aspect-auto">
                         <Image
+                            loading="eager"
+                            height={600}
+                            width={500}
                             alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
                             src={image3}
                             className="absolute size-full object-cover group-hover:opacity-75"
