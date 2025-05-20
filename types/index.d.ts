@@ -1,20 +1,26 @@
-export interface Product {
-    id: number
-    title: string
-    description: string
-    price: number
-    discountPercentage: number
-    rating: number
-    stock: number
-    brand: string
-    category: string
-    thumbnail: string
-    images: string[]
+import { LucideIcon } from 'lucide-react';
+
+/**
+ * This file contains the TypeScript definitions for the shared data structure
+ * @see https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#interfaces
+ */
+
+export interface BreadcrumbItem {
+    title: string;
+    href: string;
 }
 
-export interface ProductListResponse {
-    products: Product[]
-    total: number
-    skip: number
-    limit: number
+export interface NavGroup {
+    title: string;
+    items: NavItem[];
 }
+
+export interface NavItem {
+    title: string;
+    href: string;
+    icon?: LucideIcon | null;
+    isActive?: boolean;
+}
+
+
+

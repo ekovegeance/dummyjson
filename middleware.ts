@@ -1,5 +1,6 @@
 import {NextRequest, NextResponse} from "next/server"
 import {auth} from "@/auth";
+import {getAuthUser} from "@/lib/data/auth"
 
 /**
  * Middleware to protect routes
@@ -20,11 +21,17 @@ export default async function middleware(req: NextRequest) {
 
     // 3. Auth.js session
     const session = await auth()
+    const user = await getAuthUser();
+    const isAdmin = user?.role === "admin"
     const isAuthenticated = !!session?.user
 
     // 4. Redirect to /login if the user is not authenticated
     if (isProtectedRoute && !isAuthenticated) {
         return NextResponse.redirect(new URL("/signin", req.url))
+    }
+    // Redirect / if user not admin
+    if (isProtectedRoute && isAuthenticated && !isAdmin) {
+        return NextResponse.redirect(new URL("/", req.url))
     }
 
     // 5. Redirect to / if the user is authenticated and trying to access a sign-in page
