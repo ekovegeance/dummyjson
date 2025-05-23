@@ -1,5 +1,5 @@
 import api from "@/lib/axios";
-import {ProductListResponse} from "@/types/product";
+import {ProductListResponse} from "@/types/products";
 
 export async function getProducts() {
     try {

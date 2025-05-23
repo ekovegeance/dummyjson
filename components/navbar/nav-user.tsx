@@ -35,6 +35,7 @@ export default  function NavUser({user, signOut}: NavUser) {
                     </div>
                     </DropdownMenuLabel>
                 <DropdownMenuSeparator/>
+                <DropdownMenuItem>Dashboard</DropdownMenuItem>
                 <DropdownMenuItem>Profile</DropdownMenuItem>
                 <DropdownMenuItem>Billing</DropdownMenuItem>
                 <DropdownMenuSeparator/>

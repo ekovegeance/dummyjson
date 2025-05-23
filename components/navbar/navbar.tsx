@@ -20,9 +20,7 @@ const navigation = {
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     const {data: session} = useSession()
-    console.log(session?.user.username)
     const user = session?.user as AuthUser
-    console.log(user)
 
 
     return (

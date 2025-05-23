@@ -1,21 +1,23 @@
 import React from 'react';
-import {getProductById} from "@/lib/data/product";
+import {getProductById} from "@/lib/data/products";
+import ProductDetails from "@/components/product/product-detail";
+import { notFound } from 'next/navigation';
+
 
 export default async function Page({params}: {params: Promise<{id: number}>}) {
     const { id } = await params;
     // Fetch product details using the id
     const product = await getProductById(id);
     console.log("Log Detail Product",product);
-    if (!product) {
-        return <div>Product not found</div>;
-    }
+    if (!product) return notFound()
+
     return (
         <div>
-            Page
-            <h1>Product ID: {id}</h1>
-            {product.title}
+            {/*Page*/}
+            {/*<h1>Product ID: {id}</h1>*/}
+            {/*{product.title}*/}
             {/* Add your product details component here */}
-            {/* Example: <ProductDetails id={id} /> */}
+             <ProductDetails product={product} />
         </div>
     );
 }

@@ -1,4 +1,5 @@
-import ProductListSkeleton from "@/components/stocks/skeletons/product-list";
+import {ProductListSkeleton} from "@/components/skeletons";
+
 
 export default function Loading() {
     // You can add any UI inside Loading, including a Skeleton.
