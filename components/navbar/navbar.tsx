@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, {useState} from 'react'
 import {FileJson2, Menu, Search, ShoppingCart, X} from 'lucide-react'
