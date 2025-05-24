@@ -5,7 +5,6 @@ import PostDetail from "@/components/post/post-detail";
 export default async function Page({params}: {params: Promise<{id: number}>}) {
     const {id} = await params;
     const post = await getPostById(id)
-    console.log("Post", post)
     return (
         <div>
             <PostDetail post={post}/>

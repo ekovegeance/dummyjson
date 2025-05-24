@@ -1,5 +1,6 @@
-import {Post} from "@/types/posts";
 import Link from "next/link";
+import Image from "next/image";
+import {PostWithUser} from "@/types/posts";
 
 // const posts = [
 //     {
@@ -22,7 +23,7 @@ import Link from "next/link";
 //     // More posts...
 // ]
 
-export default function PostList({posts}: { posts: Post[] }) {
+export default function PostList({posts}: { posts: PostWithUser[] }) {
     return (
         <div className="bg-white py-4">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -40,12 +41,15 @@ export default function PostList({posts}: { posts: Post[] }) {
                                 {/*<time dateTime={post.datetime} className="text-gray-500">*/}
                                 {/*    {post.date}*/}
                                 {/*</time>*/}
-                                <a
-                                    href={'/'}
-                                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                                >
-                                    {post.tags}
-                                </a>
+                                {post.tags.map((tag, index) => (
+                                    <a key={index}
+                                        href={'/'}
+                                        className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                                    >
+                                        {tag}
+                                    </a>
+                                ))}
+
                             </div>
                             <div className="group relative">
                                 <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -59,16 +63,16 @@ export default function PostList({posts}: { posts: Post[] }) {
                                 <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{post.body}</p>
                             </div>
                             <div className="relative mt-8 flex items-center gap-x-4">
-                                {/*<Image alt="" src={post.author.imageUrl} className="size-10 rounded-full bg-gray-50" />*/}
-                                {/*<div className="text-sm/6">*/}
-                                {/*    <p className="font-semibold text-gray-900">*/}
-                                {/*        <a href={post.author.href}>*/}
-                                {/*            <span className="absolute inset-0" />*/}
-                                {/*            {post.author.name}*/}
-                                {/*        </a>*/}
-                                {/*    </p>*/}
-                                {/*    <p className="text-gray-600">{post.author.role}</p>*/}
-                                {/*</div>*/}
+                                <Image alt={post.user.username} src={post.user.image} width={500} height={500} className="size-10 rounded-full bg-gray-50" />
+                                <div className="text-sm/6">
+                                    <p className="font-semibold text-gray-900">
+                                        <a href={`/users/${post.user.username}`}>
+                                            <span className="absolute inset-0" />
+                                            {post.user.firstName} {post.user.lastName}
+                                        </a>
+                                    </p>
+                                    <p className="text-gray-600">{post.user.role}</p>
+                                </div>
                             </div>
                         </article>
                     ))}

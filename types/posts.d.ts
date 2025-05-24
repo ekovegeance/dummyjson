@@ -1,3 +1,5 @@
+import {User} from "@/types/user";
+
 export interface PostsResponse {
     limit: number;
     posts: Post[];
@@ -18,4 +20,8 @@ export interface Post {
 export interface Reactions {
     dislikes: number;
     likes: number;
+}
+
+export interface PostWithUser extends Post{
+    user: User
 }

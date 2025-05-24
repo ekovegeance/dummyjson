@@ -1,5 +1,12 @@
-export interface AuthUser {
-    address: ResponseAddress;
+export interface UserResponse {
+    limit: number;
+    skip: number;
+    total: number;
+    users: User[];
+}
+
+export interface User {
+    address: UserAddress;
     age: number;
     bank: Bank;
     birthDate: string;
@@ -26,10 +33,10 @@ export interface AuthUser {
     university: string;
     userAgent: string;
     username: string;
-    weight: number;
+    weight: number | number;
 }
 
-export interface ResponseAddress {
+export interface UserAddress {
     address: string;
     city: string;
     coordinates: PurpleCoordinates;
