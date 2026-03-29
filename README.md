@@ -6,7 +6,10 @@ Best Practices Dummy JSON Implementation with Next.js 16 App router, CSR, SSR, S
 First, run the development server:
 
 ```bash
-pnpm create next-app@latest --template "https://github.com/ekovegeance/dummyjson"
+pnpm create next-app --example "https://github.com/ekovegeance/dummyjson"
+```
+
+```bash
 cp .env.example .env
 ```
 
