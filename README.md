@@ -1,19 +1,13 @@
 # Dummy JSON Implementation
-Best Practices Dummy JSON Implementation with Next JS 15 App router, CSR, SSR, Server Action and Axios.
+Best Practices Dummy JSON Implementation with Next.js 16 App router, CSR, SSR, Server Action and Axios.
 
 ### Getting Started
 
 First, run the development server:
 
 ```bash
-git clone https://github.com/ekovegeance/dummyjson.git
-cd dummyjson
+pnpm create next-app@latest --template "https://github.com/ekovegeance/dummyjson"
 cp .env.example .env
-```
-
-Then, install the dependencies:
-```bash
-npm install && npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
